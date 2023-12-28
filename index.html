@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player | Wavesurfer.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="playlist container ">
+        <div class="navigation">
+            <h3>Playlist</h3>
+            <button class="navBtn closePlaylist"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="listWrap">
+        </div>
+        <div class="playingNow">
+            <div class="music">
+                <div class="img thumbnail">
+                    <img src="image.png" width="100" alt="">
+                </div>
+                <div class="detail">
+                    <p class="title">Baby Open Your Eyes</p>
+                    <p class="artis">Eminem, Justin Bieber & Duava</p>
+                </div>
+            </div>
+            <button class="playNow"><i class="fa-solid fa-pause"></i></button>
+        </div>
+    </div>
+    <div class="musicPlayer container">
+        <div class="navigation">
+            <button class="navBtn playlistBtn"><i class="fa-solid fa-bars-staggered"></i></button>
+            <p>Now Playing</p>
+            <button class="navBtn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+        <div class="album">
+            <div class="thumbnailBlur">
+                <img src="image.png">
+            </div>
+            <div class="thumbnail">
+                <img src="image.png">
+            </div>
+        </div>
+        <div class="details">
+            <div class="titleArtis">
+                <p class="title">Baby Open Your Eyes</p>
+                <p class="artis">Eminem, Justin Bieber & Duava</p>
+            </div>
+            <div class="timeSpectrum">
+                <p class="timeStar">0.00</p>
+                <div id="audiowave"></div>
+                <p class="musicTime">2.45</p>
+            </div>
+            <div class="playerButton">
+                <button><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btnPlayer btn-toggle-prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btnPlayer btn-toggle-pause"><i class="fa-solid fa-play iconPlay"></i></button>
+                <button class="btnPlayer btn-toggle-next"><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-repeat"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
